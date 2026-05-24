@@ -1,0 +1,12 @@
+{
+  "phase": "automatic_operator_trust",
+  "signals": {
+    "queue_second_guessing_reduced": true,
+    "replay_skimmability_required": true,
+    "evidence_actionability_required": true,
+    "decision_speed_without_confidence_loss": true,
+    "trust_becomes_automatic": true
+  },
+  "manual_review_required": true,
+  "autonomous_submission": false
+}
