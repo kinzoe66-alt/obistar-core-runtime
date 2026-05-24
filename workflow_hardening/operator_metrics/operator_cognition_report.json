@@ -1,0 +1,12 @@
+{
+  "phase": "operator_cognition_acceleration",
+  "signals": {
+    "queue_intuition_reduces_hesitation": true,
+    "reviewer_confidence_rises_faster": true,
+    "decision_time_decreases": true,
+    "queue_ordering_trusted_automatically": true,
+    "replay_confirmation_nearly_instant": true
+  },
+  "manual_review_required": true,
+  "autonomous_submission": false
+}
