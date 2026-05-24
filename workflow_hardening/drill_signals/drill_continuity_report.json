@@ -1,0 +1,13 @@
+{
+  "phase": "operator_signal_refinement",
+  "targets": {
+    "replay_understanding": true,
+    "queue_trust": true,
+    "evidence_readability": true,
+    "lineage_compression": true,
+    "adjudication_confidence": true,
+    "hesitation_reduction": true
+  },
+  "manual_review_required": true,
+  "autonomous_submission": false
+}
