@@ -1,0 +1,18 @@
+from pathlib import Path
+import yaml
+
+def load_yaml(path: str):
+    p = Path(path)
+    if not p.exists():
+        raise FileNotFoundError(path)
+    with p.open("r", encoding="utf-8") as f:
+        data = yaml.safe_load(f)
+    if not isinstance(data, dict):
+        raise ValueError(f"Invalid YAML document: {path}")
+    return data
+
+def load_authority_tree(root: str = "authority"):
+    docs = {}
+    for path in Path(root).rglob("*.yaml"):
+        docs[str(path)] = load_yaml(str(path))
+    return docs
