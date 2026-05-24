@@ -1,0 +1,12 @@
+{
+  "phase": "team_review_readiness",
+  "targets": {
+    "review_batching": true,
+    "session_continuity": true,
+    "review_fatigue_reduction": true,
+    "multi_reviewer_consistency": true,
+    "organizational_onboarding_compression": true
+  },
+  "manual_review_required": true,
+  "autonomous_submission": false
+}
