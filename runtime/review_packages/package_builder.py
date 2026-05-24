@@ -1,3 +1,5 @@
+from runtime.queue_explanations.priority_intuition import PriorityIntuitionBuilder
+from runtime.queue_explanations.priority_explainer import QueuePriorityExplainer
 def build_review_package(candidate):
 
     return {
@@ -58,6 +60,15 @@ def build_review_package(candidate):
             candidate.get(
                 "repeat_saturation"
             )
+        ),
+
+        "priority_explanation": (
+            QueuePriorityExplainer()
+            .explain(candidate)
+        ),
+            "priority_intuition": (
+            PriorityIntuitionBuilder()
+            .build(candidate)
         ),
 
         "review_guidance": {
