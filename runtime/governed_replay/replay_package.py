@@ -1,4 +1,8 @@
 import json
+
+from runtime.governed_replay.replay_transition_visibility import (
+    ReplayTransitionVisibility
+)
 from pathlib import Path
 
 
@@ -28,9 +32,24 @@ class ReplayRoutePackager:
             ),
 
             "replay_sequence": (
-                replay_artifact[
-                    "replay_sequence"
-                ]
+                ReplayTransitionVisibility()
+                .augment(
+                    replay_artifact[
+                        "replay_sequence"
+                    ],
+
+                    candidate_id=(
+                        replay_artifact[
+                            "candidate_id"
+                        ]
+                    ),
+
+                    surface_id=(
+                        replay_artifact[
+                            "surface_id"
+                        ]
+                    ),
+                )
             ),
 
             "reproducible": (
