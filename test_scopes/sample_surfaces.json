@@ -1,0 +1,19 @@
+{
+  "surfaces": [
+    {
+      "runtime_surface_id": "surface-001",
+      "validation_surface": "api",
+      "workflow_family": "session_workflow"
+    },
+    {
+      "runtime_surface_id": "surface-002",
+      "validation_surface": "api",
+      "workflow_family": "state_transition"
+    },
+    {
+      "runtime_surface_id": "surface-003",
+      "validation_surface": "api",
+      "workflow_family": "session_workflow"
+    }
+  ]
+}

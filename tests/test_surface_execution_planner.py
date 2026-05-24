@@ -6,7 +6,9 @@ def test_surface_execution_planner():
 
     plan = (
         SurfaceExecutionPlanner()
-        .build()
+        .build(
+            "test_scopes/sample_surfaces.json"
+        )
     )
 
     assert plan["surface_count"] == 3

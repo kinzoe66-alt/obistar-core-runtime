@@ -16,5 +16,5 @@ def test_live_runner(tmp_path):
     result = LiveGovernedRunner().run(str(scope_file))
 
     assert result["imported"]["imported_count"] == 1
-    assert result["comparison"]["surface_count"] == 3
+    assert result["comparison"]["surface_count"] == 1
     assert result["manual_review_required"] is True

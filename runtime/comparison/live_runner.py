@@ -5,7 +5,9 @@ class LiveGovernedRunner:
 
     def run(self, scope_file: str):
         imported = AuthorizedScopeImporter().import_file(scope_file)
-        comparison = GovernedComparisonRunner().run()
+        comparison = GovernedComparisonRunner().run(
+            scope_file
+        )
 
         return {
             "imported": imported,

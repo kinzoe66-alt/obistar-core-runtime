@@ -1,7 +1,9 @@
 from runtime.comparison.comparison_runner import GovernedComparisonRunner
 
 def test_governed_comparison_runner():
-    result = GovernedComparisonRunner().run()
+    result = GovernedComparisonRunner().run(
+        "test_scopes/sample_surfaces.json"
+    )
 
     assert result["surface_count"] == 3
     assert all(item["certified"] is True for item in result["results"])

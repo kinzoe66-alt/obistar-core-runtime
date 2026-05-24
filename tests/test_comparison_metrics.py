@@ -1,7 +1,9 @@
 from runtime.comparison.comparison_runner import GovernedComparisonRunner
 
 def test_comparison_metrics():
-    result = GovernedComparisonRunner().run()
+    result = GovernedComparisonRunner().run(
+        "test_scopes/sample_surfaces.json"
+    )
 
     assert result["metrics"]["surface_count"] == 3
     assert result["metrics"]["certification_rate"] == 1.0
