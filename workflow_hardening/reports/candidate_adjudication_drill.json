@@ -1,0 +1,25 @@
+{
+  "drill": "candidate_adjudication",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "sequence": 1,
+      "candidate_id": "sample-001",
+      "surface_id": "surface-001",
+      "inspection_steps": [
+        "inspect_queue_position",
+        "inspect_replay_artifact",
+        "inspect_evidence",
+        "inspect_lineage",
+        "make_manual_adjudication_decision",
+        "record_friction"
+      ],
+      "review_status": "pending_manual_adjudication",
+      "friction_record_required": true,
+      "manual_review_required": true,
+      "autonomous_submission": false
+    }
+  ],
+  "manual_review_required": true,
+  "autonomous_submission": false
+}
