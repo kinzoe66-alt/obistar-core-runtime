@@ -1,0 +1,23 @@
+{
+  "summary": "operator_trust_formation",
+  "candidate_count": 1,
+  "tracked_signals": [
+    "review_throughput",
+    "adjudication_confidence",
+    "evidence_readability",
+    "lineage_clarity",
+    "operator_hesitation",
+    "queue_prioritization"
+  ],
+  "trust_objective": {
+    "review_throughput_refinement": true,
+    "adjudication_confidence_acceleration": true,
+    "evidence_readability_optimization": true,
+    "lineage_clarity_compression": true,
+    "operator_hesitation_reduction": true,
+    "review_queue_prioritization_tuning": true
+  },
+  "completion_state": "operator_scoring_required",
+  "manual_review_required": true,
+  "autonomous_submission": false
+}

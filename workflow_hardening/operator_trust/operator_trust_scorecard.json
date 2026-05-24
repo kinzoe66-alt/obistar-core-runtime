@@ -1,0 +1,32 @@
+{
+  "scorecard": "operator_trust_formation",
+  "version": 1,
+  "signals": {
+    "review_throughput": {
+      "target": "reduce_time_per_candidate",
+      "metric": "minutes_per_candidate"
+    },
+    "adjudication_confidence": {
+      "target": "increase_decision_confidence",
+      "metric": "confidence_score_0_to_3"
+    },
+    "evidence_readability": {
+      "target": "reduce_evidence_noise",
+      "metric": "readability_score_0_to_3"
+    },
+    "lineage_clarity": {
+      "target": "reduce_lineage_confusion",
+      "metric": "clarity_score_0_to_3"
+    },
+    "operator_hesitation": {
+      "target": "reduce_pause_points",
+      "metric": "hesitation_score_0_to_3"
+    },
+    "queue_prioritization": {
+      "target": "surface_most_review_ready_first",
+      "metric": "priority_alignment_score_0_to_3"
+    }
+  },
+  "manual_review_required": true,
+  "autonomous_submission": false
+}
