@@ -1,0 +1,12 @@
+{
+  "phase": "operator_economics_refinement",
+  "targets": {
+    "trust_calibration": true,
+    "review_economics": true,
+    "decision_latency": true,
+    "operator_throughput": true,
+    "organizational_usability": true
+  },
+  "manual_review_required": true,
+  "autonomous_submission": false
+}
